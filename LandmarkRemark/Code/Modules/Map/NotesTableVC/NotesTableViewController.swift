@@ -33,7 +33,7 @@ final class NotesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        notesTableVM = NotesTableViewModel()
+
         setUpTableView()
   
     }

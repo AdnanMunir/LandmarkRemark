@@ -85,8 +85,15 @@ final class MapViewController: UIViewController {
         navigationItem.titleView = searchController?.searchBar
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.dimsBackgroundDuringPresentation = true
+        searchBar.scopeButtonTitles = ["Search by UserName" , "Search by Notes"]
         searchBar.showsScopeBar = true
-        searchBar.scopeButtonTitles = ["Search by UserName" , "Seaarch by Notes"]
+        #if compiler(>=5.1)
+        if #available(iOS 13.0, *) {
+            searchBar.setShowsScope(true, animated: false)
+        } 
+        #endif
+        
+        
         searchBar.scopeBarBackgroundImage = UIImage.imageWithColor(color: navigationController?.navigationBar.backgroundColor ?? UIColor.clear)
         searchBar.delegate = self
         

@@ -26,6 +26,12 @@ final class MainCoordinator: Coordinator {
     
     func start() {
         
+        #if compiler(>=5.1)
+        if #available(iOS 13.0, *) {
+        // Always adopt a light interface style.
+            window.overrideUserInterfaceStyle = .light
+        }
+        #endif
         appConfigurations.delegate = self
         appConfigurations.decideAppFlow()
 

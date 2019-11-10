@@ -21,6 +21,7 @@ final class MapViewCoordinator: Coordinator {
     func start() {
         let mapVC = MapViewController.instantiate(withStoryBoard: .Map)
         let notesTVC = NotesTableViewController.instantiate(withStoryBoard: .Map)
+        notesTVC.notesTableVM = NotesTableViewModel()
         notesTVC.delegate = mapVC
         mapVC.searchController = UISearchController(searchResultsController: notesTVC)
         mapVC.searchController.searchResultsUpdater = notesTVC
