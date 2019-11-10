@@ -9,6 +9,7 @@ App Approach :
     (i) Authentication Module -> contains Login, Signup screens
     (ii) Map Module -> contains Map, Note View, Note table search screens
 3. App Forced to use Light Mode for iOS 13
+4. Unit Tests added
 
 Implicit Requirements : 
 
