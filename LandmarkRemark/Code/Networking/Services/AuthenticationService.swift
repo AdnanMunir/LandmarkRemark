@@ -31,7 +31,7 @@ struct AuthenticationService : AuthenticationProtocol,SignUpProtocol,LoginProtoc
         FIRInterface.sharedInstance.createUser(request: request, completion: completion)
     }
     
-    func login(request : LoginRequest , completion : @escaping (Result<Note>) -> Void) {
+    func login(request : LoginRequest , completion : @escaping (Result<APIResponse>) -> Void) {
         FIRInterface.sharedInstance.signInUser(request: request) { (result) in
             switch result {
             case .success(let user):

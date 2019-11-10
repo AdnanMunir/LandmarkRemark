@@ -20,7 +20,7 @@ protocol LoginProtocol {
     /**
      Call this function to Login User from any of the Provider(Firbase , server , DB etc)
      */
-    func login(request : LoginRequest , completion : @escaping (Result<Note>) -> Void)
+    func login(request : LoginRequest , completion : @escaping (Result<APIResponse>) -> Void)
 }
 
 protocol AuthenticationProtocol {
