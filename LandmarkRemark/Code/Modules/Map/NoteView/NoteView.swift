@@ -33,10 +33,12 @@ class NoteView: UIView {
             }
             
             self.noteViewVM.startIndicator = {[weak self] in
+                self?.isUserInteractionEnabled = false
                 self?.acativityIndicator.startAnimating()
             }
             
             self.noteViewVM.stopIndicator = {[weak self] in
+                self?.isUserInteractionEnabled = true
                 self?.acativityIndicator.stopAnimating()
             }
             
@@ -76,5 +78,22 @@ class NoteView: UIView {
     @IBAction func dissmissViewButtonAction(_ sender: Any) {
         endEditing(true)
         
+    }
+}
+
+extension NoteView: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        endEditing(true)
+        return true
+    }
+}
+
+extension NoteView: UITextViewDelegate {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
     }
 }
