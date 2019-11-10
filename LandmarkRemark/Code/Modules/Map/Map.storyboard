@@ -13,7 +13,7 @@
         <!--Map View Controller-->
         <scene sceneID="JXr-le-doy">
             <objects>
-                <viewController storyboardIdentifier="MapViewController" id="VVc-1R-5tY" customClass="MapViewController" customModule="Landmark_Remark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="VVc-1R-5tY" customClass="MapViewController" customModule="LandmarkRemark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oqo-dX-5qd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,13 +185,13 @@
         <!--Notes Table View Controller-->
         <scene sceneID="Ahr-g1-xtc">
             <objects>
-                <tableViewController storyboardIdentifier="NotesTableViewController" id="UuQ-rU-klc" customClass="NotesTableViewController" customModule="Landmark_Remark" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NotesTableViewController" id="UuQ-rU-klc" customClass="NotesTableViewController" customModule="LandmarkRemark" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WBq-gV-cOc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotesTableViewCell" rowHeight="131" id="5oP-GR-d3y" customClass="NotesTableViewCell" customModule="Landmark_Remark" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotesTableViewCell" rowHeight="131" id="5oP-GR-d3y" customClass="NotesTableViewCell" customModule="LandmarkRemark" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="131"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5oP-GR-d3y" id="R3R-Zg-rPd">
@@ -238,6 +238,26 @@
                                     <outlet property="labelTitle" destination="UTb-CI-61P" id="blX-Qz-mYG"/>
                                     <outlet property="labelUserName" destination="cUG-iQ-fE6" id="Cdg-AU-rof"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="EmptyTableViewCell" id="BmH-qW-AbJ">
+                                <rect key="frame" x="0.0" y="159" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BmH-qW-AbJ" id="gSN-cu-Gl1">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Notes Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20H-Ty-6ZR">
+                                            <rect key="frame" x="135" y="11.5" width="144" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="20H-Ty-6ZR" firstAttribute="centerX" secondItem="gSN-cu-Gl1" secondAttribute="centerX" id="c7M-7B-Vyl"/>
+                                        <constraint firstItem="20H-Ty-6ZR" firstAttribute="centerY" secondItem="gSN-cu-Gl1" secondAttribute="centerY" id="tKX-Gm-d7D"/>
+                                    </constraints>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>

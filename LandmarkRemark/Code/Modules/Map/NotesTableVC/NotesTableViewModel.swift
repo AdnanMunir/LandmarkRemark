@@ -11,8 +11,11 @@ import Foundation
 
 
 final class NotesTableViewModel: NotesTableModeling {
+    var isShowNoNoteAvailableCell = false
+    
     
     private var notes : [Note]?
+    
     
     func getSections() -> Int {
         return 1
@@ -20,7 +23,12 @@ final class NotesTableViewModel: NotesTableModeling {
     
     
     func getRows() -> Int {
-        return notes?.count ?? 0
+        if let notes = notes , notes.count > 0 {
+            isShowNoNoteAvailableCell = false
+            return notes.count
+        }
+        isShowNoNoteAvailableCell = true
+        return 1
     }
     
     func getNote(at index : Int) -> Note {

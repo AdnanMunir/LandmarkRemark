@@ -37,7 +37,7 @@
 		DB6F0A0A23782FC9005C9995 /* AppAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F09CB23782FC9005C9995 /* AppAlerts.swift */; };
 		DB6F0A0B23782FC9005C9995 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F09CD23782FC9005C9995 /* LocationManager.swift */; };
 		DB6F0A0C23782FC9005C9995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F09CF23782FC9005C9995 /* AppDelegate.swift */; };
-		DB6F0A0D23782FC9005C9995 /* NotesTableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F09D323782FC9005C9995 /* NotesTableVM.swift */; };
+		DB6F0A0D23782FC9005C9995 /* NotesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F09D323782FC9005C9995 /* NotesTableViewModel.swift */; };
 		DB6F0A0E23782FC9005C9995 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F09D423782FC9005C9995 /* NotesTableViewController.swift */; };
 		DB6F0A0F23782FC9005C9995 /* NotesTableModelingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F09D523782FC9005C9995 /* NotesTableModelingProtocol.swift */; };
 		DB6F0A1023782FC9005C9995 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F09D723782FC9005C9995 /* NotesTableViewCell.swift */; };
@@ -108,7 +108,7 @@
 		DB6F09CB23782FC9005C9995 /* AppAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAlerts.swift; sourceTree = "<group>"; };
 		DB6F09CD23782FC9005C9995 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		DB6F09CF23782FC9005C9995 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB6F09D323782FC9005C9995 /* NotesTableVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableVM.swift; sourceTree = "<group>"; };
+		DB6F09D323782FC9005C9995 /* NotesTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewModel.swift; sourceTree = "<group>"; };
 		DB6F09D423782FC9005C9995 /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		DB6F09D523782FC9005C9995 /* NotesTableModelingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableModelingProtocol.swift; sourceTree = "<group>"; };
 		DB6F09D723782FC9005C9995 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
@@ -347,7 +347,7 @@
 		DB6F09D223782FC9005C9995 /* NotesTableVC */ = {
 			isa = PBXGroup;
 			children = (
-				DB6F09D323782FC9005C9995 /* NotesTableVM.swift */,
+				DB6F09D323782FC9005C9995 /* NotesTableViewModel.swift */,
 				DB6F09D423782FC9005C9995 /* NotesTableViewController.swift */,
 				DB6F09D523782FC9005C9995 /* NotesTableModelingProtocol.swift */,
 				DB6F09D623782FC9005C9995 /* NotesCell */,
@@ -632,7 +632,7 @@
 				DB6F09F223782FC9005C9995 /* LoginCoordinator.swift in Sources */,
 				DB6F0A1D23782FC9005C9995 /* LoginViewModel.swift in Sources */,
 				DB6F09F423782FC9005C9995 /* MapViewCoordinator.swift in Sources */,
-				DB6F0A0D23782FC9005C9995 /* NotesTableVM.swift in Sources */,
+				DB6F0A0D23782FC9005C9995 /* NotesTableViewModel.swift in Sources */,
 				DB6F09F723782FC9005C9995 /* FailureReasons.swift in Sources */,
 				DB6F0A1923782FC9005C9995 /* SignupViewController.swift in Sources */,
 				DB6F0A0223782FC9005C9995 /* APIResponse.swift in Sources */,

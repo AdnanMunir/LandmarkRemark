@@ -61,12 +61,23 @@ final class NotesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if notesTableVM.isShowNoNoteAvailableCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "EmptyTableViewCell", for: indexPath)
+            return cell
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: NotesTableViewCell.string, for: indexPath) as! NotesTableViewCell
         cell.configureCell(with: notesTableVM.getNote(at: indexPath.row))
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if notesTableVM.isShowNoNoteAvailableCell {
+            return
+        }
+        
         delegate?.moveToNote(note: notesTableVM.getNote(at: indexPath.row))
     }
 

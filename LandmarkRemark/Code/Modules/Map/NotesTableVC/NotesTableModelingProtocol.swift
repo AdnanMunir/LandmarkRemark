@@ -29,4 +29,9 @@ protocol NotesTableModeling {
      */
     func setNotes(notes : [Note])
     
+    /**
+     Decides weather to show Cell with info containing No Data Available
+     */
+    var isShowNoNoteAvailableCell : Bool{get set}
+    
 }
